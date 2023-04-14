@@ -1,0 +1,17 @@
+{
+    "name": "Purchasing.Tasks",
+    "rootNamespace": "",
+    "references": [
+        "GUID:85e6728c3460e4ce886d082c763882e1",
+        "GUID:b62eeecee1615e349aac47c0d917db5b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
