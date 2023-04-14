@@ -6,7 +6,17 @@ namespace Purchasing
 {
     public static class UnityPurchasingUtility
     {
-        public static ConfigurationBuilder Create(IEnumerable<ProductData> products)
+        public static IPurchasing CreatePurchasing(ConfigurationBuilder builder)
+        {
+            var listener = new UnityStoreListener();
+            UnityPurchasing.Initialize(listener, builder);
+            return new Purchasing
+            {
+                Controller = listener.Controller
+            };
+        }
+        
+        public static ConfigurationBuilder CreateBuilder(IEnumerable<ProductData> products)
         {
             var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
             foreach (var product in products)
