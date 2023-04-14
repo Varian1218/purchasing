@@ -13,7 +13,7 @@ namespace Purchasing.Tasks
             _task = new AwaiterTask<string>(_awaiter);
         }
 
-        private IPurchasing Purchasing
+        public IPurchasing Purchasing
         {
             set
             {
